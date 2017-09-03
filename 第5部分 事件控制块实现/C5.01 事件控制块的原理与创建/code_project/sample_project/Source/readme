@@ -1,0 +1,9 @@
+目的：
+1、重点：获取任务信息
+
+1、添加tEvent.h,.c文件；
+2、定义tEvent类型, 说明是否考虑实现一个多优先级等待列表；
+3、在task中添加event的3个字段，在taskInit中初始化
+3、实现tEventInit，添加错误码；tErrorNoError
+
+单独，无法测试，进入下一章进行测试。

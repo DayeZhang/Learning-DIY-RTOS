@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="sample_project" targetName="sample_project" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs />
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26f7431f-1455-470c-9482-f87668c8ffee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../任务延时队列.pptx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sample_project.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/readme" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/readme" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/DebugConfig/Target_1_STM32F103RC.dbgconf" afterPath="$PROJECT_DIR$/DebugConfig/Target_1_STM32F103RC.dbgconf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Listings/SimpleTwoTask.map" afterPath="$PROJECT_DIR$/Listings/SimpleTwoTask.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Listings/startup_armcm3.lst" afterPath="$PROJECT_DIR$/Listings/startup_armcm3.lst" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Listings/startup_stm32f10x_hd.lst" afterPath="$PROJECT_DIR$/Listings/startup_stm32f10x_hd.lst" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Listings/switch.lst" afterPath="$PROJECT_DIR$/Listings/switch.lst" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Listings/tinyOS.map" afterPath="$PROJECT_DIR$/Listings/tinyOS.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/SimpleTwoTask.axf" afterPath="$PROJECT_DIR$/Objects/SimpleTwoTask.axf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/SimpleTwoTask.build_log.htm" afterPath="$PROJECT_DIR$/Objects/SimpleTwoTask.build_log.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/SimpleTwoTask.htm" afterPath="$PROJECT_DIR$/Objects/SimpleTwoTask.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/SimpleTwoTask.lnp" afterPath="$PROJECT_DIR$/Objects/SimpleTwoTask.lnp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/SimpleTwoTask_Target 1.dep" afterPath="$PROJECT_DIR$/Objects/SimpleTwoTask_Target 1.dep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/Two Task Switch_Target 1.dep" afterPath="$PROJECT_DIR$/Objects/Two Task Switch_Target 1.dep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/main.crf" afterPath="$PROJECT_DIR$/Objects/main.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/main.d" afterPath="$PROJECT_DIR$/Objects/main.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/main.o" afterPath="$PROJECT_DIR$/Objects/main.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/startup_armcm3.d" afterPath="$PROJECT_DIR$/Objects/startup_armcm3.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/startup_armcm3.o" afterPath="$PROJECT_DIR$/Objects/startup_armcm3.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/startup_stm32f10x_hd.d" afterPath="$PROJECT_DIR$/Objects/startup_stm32f10x_hd.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/startup_stm32f10x_hd.o" afterPath="$PROJECT_DIR$/Objects/startup_stm32f10x_hd.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/switch.crf" afterPath="$PROJECT_DIR$/Objects/switch.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/switch.d" afterPath="$PROJECT_DIR$/Objects/switch.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/switch.o" afterPath="$PROJECT_DIR$/Objects/switch.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_armcm3.crf" afterPath="$PROJECT_DIR$/Objects/system_armcm3.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_armcm3.d" afterPath="$PROJECT_DIR$/Objects/system_armcm3.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_armcm3.o" afterPath="$PROJECT_DIR$/Objects/system_armcm3.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_stm32f10x.crf" afterPath="$PROJECT_DIR$/Objects/system_stm32f10x.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_stm32f10x.d" afterPath="$PROJECT_DIR$/Objects/system_stm32f10x.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/system_stm32f10x.o" afterPath="$PROJECT_DIR$/Objects/system_stm32f10x.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/task.crf" afterPath="$PROJECT_DIR$/Objects/task.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/task.d" afterPath="$PROJECT_DIR$/Objects/task.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/task.o" afterPath="$PROJECT_DIR$/Objects/task.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tbitmap.crf" afterPath="$PROJECT_DIR$/Objects/tbitmap.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tbitmap.d" afterPath="$PROJECT_DIR$/Objects/tbitmap.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tbitmap.o" afterPath="$PROJECT_DIR$/Objects/tbitmap.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS.axf" afterPath="$PROJECT_DIR$/Objects/tinyOS.axf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS.build_log.htm" afterPath="$PROJECT_DIR$/Objects/tinyOS.build_log.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS.htm" afterPath="$PROJECT_DIR$/Objects/tinyOS.htm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS.lnp" afterPath="$PROJECT_DIR$/Objects/tinyOS.lnp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS.sct" afterPath="$PROJECT_DIR$/Objects/tinyOS.sct" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS_Target 1.dep" afterPath="$PROJECT_DIR$/Objects/tinyOS_Target 1.dep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tinyOS_sct.Bak" afterPath="$PROJECT_DIR$/Objects/tinyOS_sct.Bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tlist.crf" afterPath="$PROJECT_DIR$/Objects/tlist.crf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tlist.d" afterPath="$PROJECT_DIR$/Objects/tlist.d" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Objects/tlist.o" afterPath="$PROJECT_DIR$/Objects/tlist.o" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/Device/ARMCM3/startup_ARMCM3.s" afterPath="$PROJECT_DIR$/RTE/Device/ARMCM3/startup_ARMCM3.s" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/Device/ARMCM3/system_ARMCM3.c" afterPath="$PROJECT_DIR$/RTE/Device/ARMCM3/system_ARMCM3.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/Device/STM32F103RC/RTE_Device.h" afterPath="$PROJECT_DIR$/RTE/Device/STM32F103RC/RTE_Device.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/Device/STM32F103RC/startup_stm32f10x_hd.s" afterPath="$PROJECT_DIR$/RTE/Device/STM32F103RC/startup_stm32f10x_hd.s" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/Device/STM32F103RC/system_stm32f10x.c" afterPath="$PROJECT_DIR$/RTE/Device/STM32F103RC/system_stm32f10x.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/RTE/RTE_Components.h" afterPath="$PROJECT_DIR$/RTE/RTE_Components.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/main.c" afterPath="$PROJECT_DIR$/Source/main.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/switch.c" afterPath="$PROJECT_DIR$/Source/switch.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/tBitmap.c" afterPath="$PROJECT_DIR$/Source/tBitmap.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/tConfig.h" afterPath="$PROJECT_DIR$/Source/tConfig.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/tLib.h" afterPath="$PROJECT_DIR$/Source/tLib.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/tList.c" afterPath="$PROJECT_DIR$/Source/tList.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/Source/tinyOS.h" afterPath="$PROJECT_DIR$/Source/tinyOS.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/tinyOS.uvguix.Administrator" afterPath="$PROJECT_DIR$/tinyOS.uvguix.Administrator" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/tinyOS.uvoptx" afterPath="$PROJECT_DIR$/tinyOS.uvoptx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../../C3.06 任务延时实现/Project/tinyOS.uvprojx" afterPath="$PROJECT_DIR$/tinyOS.uvprojx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../C3.05 双向链表数据结构/code_project/sample_project/Source/tLib.h" afterPath="$PROJECT_DIR$/../../../C3.05 双向链表数据结构/code_project/sample_project/Source/tLib.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../C3.05 双向链表数据结构/code_project/sample_project/tinyOS.uvguix.Administrator" afterPath="$PROJECT_DIR$/../../../C3.05 双向链表数据结构/code_project/sample_project/tinyOS.uvguix.Administrator" />
+    </list>
+    <ignored path="sample_project.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="sample_project" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="switch.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/switch.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system_ARMCM3.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RTE/Device/ARMCM3/system_ARMCM3.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3245033">
+              <caret line="366" column="22" selection-start-line="366" selection-start-column="11" selection-end-line="366" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tinyOS.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/tinyOS.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Source/main.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1676" />
+    <option name="y" value="-123" />
+    <option name="width" value="1676" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RTE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="sample_project" TARGET_NAME="sample_project" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sample_project" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="sample_project" TARGET_NAME="sample_project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sample_project" RUN_TARGET_NAME="sample_project">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.sample_project" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26f7431f-1455-470c-9482-f87668c8ffee" name="Default" comment="" />
+      <created>1475755719714</created>
+      <option name="number" value="Default" />
+      <updated>1475755719714</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1676" y="-123" width="1676" height="1027" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15871121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18267223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/tinyOS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/tinyOS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/tinyOS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/switch.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTE/Device/ARMCM3/system_ARMCM3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3245033">
+          <caret line="366" column="22" selection-start-line="366" selection-start-column="11" selection-end-line="366" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

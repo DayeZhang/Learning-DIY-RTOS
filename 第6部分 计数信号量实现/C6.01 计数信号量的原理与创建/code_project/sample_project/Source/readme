@@ -1,0 +1,15 @@
+目的：
+
+1、添加sem.h.sem.c文件；
+2、定义tSem结构；
+3、添加tSemInit实现，
+	为初始化event，在tEvent中添加tEventTypeSem
+
+4、添加声明
+5、在tinyOS中添加tSem.h
+
+6、示例：
+1、去掉所有的事件控制块测试代码；
+2、在task0中添加信号量；
+3、编译；简单在调度时观察下有没有正常初始化；
+

@@ -1,0 +1,10 @@
+目的：
+
+1、添加tSemInfo结构
+2、添加tSemGetInfo
+3、添加tSemDestroy
+4、添加头文件
+5、task1等待信号量，然后由task2删除并唤醒之
+
+
+

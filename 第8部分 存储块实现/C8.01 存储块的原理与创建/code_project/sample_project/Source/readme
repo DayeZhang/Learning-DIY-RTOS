@@ -1,0 +1,8 @@
+目的：
+
+1、创建tMemBlock.h/.c文件；
+2、添加tEventTypeMemBlock定义
+3、实现init函数；
+4、在tinyOS中添加tmemblock.h
+5、删除之前的代码，恢复到标准状态
+6、添加mem, block定义，添加init函数。

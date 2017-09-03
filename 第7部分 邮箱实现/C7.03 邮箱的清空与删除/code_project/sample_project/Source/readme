@@ -1,0 +1,9 @@
+目的：
+
+1、添加tMboxFlush
+2、添加tMboxDestroy
+3、添加声明
+4、修改app，演示了删除后task1恢复运行
+task3发大量消息，task4接受完一个后全部清空，导致每批只接受一个消息, flag总是为0
+
+5、注意修改task1/2/3逻辑分析仪为bit状态, task4为anolog状态

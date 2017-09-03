@@ -1,0 +1,27 @@
+目的：
+
+5、实现tEventWait；添加tyinyos中的TINYOS_TASK_WAIT_MASK定义；考虑到state中的定义；
+6、实现tEventWakeUp；正常流程，供用户直接吏用的；
+7、实现tEventRemoveTask；考虑延时，用于延时处理。
+8、修改tTaskSystemTickHandler, 添加事件判断处理； 
+
+10、将函数声明添加到头文件中；
+
+11、编译，会发现tinyOS.h中包含了tEvent.h文件，而tEvent.h又用到了tinyOS.h中后面定义的.h文件，这就有个编译依赖的关系了
+
+解决方法=>
+
+1、添加tTask.h
+2、移动任务结怨和查询结构，以及接口函数；
+3、在tinyOS.h中添加tTask.h的定义；
+4\在tEvent中添加tTask.h中的包含；
+5、编译仍然出错
+
+6、在tTask.h中添加tEvent的前置声明；struct _tEvent
+7、删除app.c中无用代码，保留最简单的4个任务翻转代码。
+8、需要自行添加调度器，因为在后面的信号量部分，全部会加上。
+暂时不管这些数据，后面自动加上。
+
+也许前面的PPT，要讲下为什么有这些参数。
+
+

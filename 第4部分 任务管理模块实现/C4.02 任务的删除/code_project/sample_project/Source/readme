@@ -1,0 +1,34 @@
+目的：
+1、重点：不允许强删任务
+
+1、为什么不允许强制删除其它任务；
+需要回收关闭资源等等
+
+2、如何优雅的删除
+1）、告诉其要删除；
+2）、强删，但是回调清除函数
+
+1、实现强删
+1）、在task中添加清理函数clean及参数定义;
+2）、在taskInit中初始化；
+3)、实现setdestroy函数；
+4）、考虑时间队列，添加tTimeTaskRemove
+5）、考虑就绪状态，tTaskSchedRemove
+6)、实现tTaskForceDelete；
+
+2)、实现请求删除
+在taskInit中添加请求删除标志以及初始化；
+实现tTaskRequestDelete
+实现tTaskIsRequestedDelete
+实现tTaskDeleteSelf，提与强删的区别，就是情况简单很多，只需要多就绪队列中移除即可；
+添加声明到头文件中；
+
+3)、演示
+1）、添加task4的结构和堆栈信息;
+2)、添加task4函数与任务初始化; 优先级要比task3低点；task3使用延时函数
+3)、为task1设置创建和删除回调函数；
+4）、在task2Entry中添加强删函数
+5)、在task3Entry检查删除请求，然后删除自己
+6)、在task4Entry中请求删除任务3,
+7)、在逻辑分析仪中添加所有任务的flag, 去掉原来的挂起测试
+8)、重复删除的问题，只能删除一次，再删就出错了，所以要加个标记位;

@@ -1,0 +1,19 @@
+目的：
+
+1、添加uint32_t tSemWait (tSem * sem, uint32_t waitTicks)
+可能调度器已经上锁，暂时不考虑，调用问题。
+
+2、添加uint32_t tSemNoWaitGet (tSem * sem)
+在tinyOS中添加错误码：tErrorResourceUnavaliable
+3、增加void tSemNotify (tSem * sem)
+4、移动到头文件中
+
+
+4、修改app.c
+1、task3的优先级更为0，用于初始化信号量；
+2、信号量定义修改为sem1, sem2;
+
+task1等待sem1, 等待task2向信号量发通知
+task2 tSemNotify, 唤醒 task1, tSemNoWaitGet
+task3Entry超时等待sem2
+

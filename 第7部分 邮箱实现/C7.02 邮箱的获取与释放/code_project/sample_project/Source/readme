@@ -1,0 +1,10 @@
+目的：
+
+1、修改任务的优先级
+1、实现tMboxWait；
+2、实现tMboxNoWaitGet；
+3、实现tMboxNotify:消息插入时可有优先级；
+添加错误码tErrorResourceFull
+添加tFront标志
+
+4、测试时注意使用front发送时，最开始会出现0、1、19/18这种情况，原因是队列中已经有等待邮件的任务

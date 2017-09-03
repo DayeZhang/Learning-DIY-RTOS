@@ -1,0 +1,45 @@
+目的：
+1、分离文件
+2、实现任务的挂起与恢复；
+
+//1、创建tTask文件
+//2、移动tTask到taskc.c文件中，在task.c中添加声明；
+//3、创建tTime.c,将delay函数移动到该目录中;
+//4、创建tcpu.c，移动tSetSysTickPeriod和SysTick_Handler；头文件#include "ARMCM3.h"
+//5、创建app.c，放置应用代码, 创建tInitApp, 在main中调用；
+//6、在main()中调用tInitApp;
+//7、在config中创建TINYOS_IDLETASK_STACK_SIZE，在main中使用；
+//8、编译测试，会发现一堆错误；
+//9、在tinyOS中添加相应的变量及函数声明；
+//10、在tTaskSched中添加tTaskSchedRdy和tTaskSchedUnRdy；
+//11、在tTaskSched后添加tTimeTaskWaitt和tTimeTaskWakeUp\tTaskSystemTickHandler
+//tTaskDelay, 注意修改了函数名称，保持一致；
+//同时修改app中的delay名称；
+
+//编译发现有警告及错误
+//12、tTaskSystemTickHandler添加void
+//13、在头文件中添加tSetSysTickPeriod
+//14、替换操作
+
+//    tListAddLast(&taskTable[prio], &(task->linkNode));  // 插入对应的优先级队列中
+
+//    tBitmapSet(&taskPrioBitmap, prio);                  // 标记优先级位置中的相应位
+
+//换为
+//    tTaskSchedRdy（task);                              // 将任务插入就绪队列
+
+
+增加挂起与唤醒代码
+15、添加状态TINYOS_TASK_SUSPEDN
+任务添加suspendCount;
+在taskInit中初始化suspendCount
+
+16、添加suspsend和wakeup函数, 添加至头文件；
+17、修改task1为suspsend自己，以便其它任务唤醒
+18、task2添加唤醒，通知task1运行，可测试唤醒时更高优先级；
+19、移动task1, env定义到上边；
+
+20、测试发现
+1、task1由task2控制运行；
+2、由于时间片切换的作用，切换到task3运行的时间内，task1和task2都无动作;
+

@@ -1,0 +1,6 @@
+目的：
+
+1、添加tMemBlockInfo结构
+2\添加两具函数的声明
+3、添加定义；
+4、添加memblock2/和mem2 在app.c中

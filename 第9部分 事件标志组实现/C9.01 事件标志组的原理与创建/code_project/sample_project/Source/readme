@@ -1,0 +1,7 @@
+目的：
+
+1、创建tFlags.h/.c
+2、添加tFlagInit；添加EventTypeFlag
+3、在tinyOS.h中添加头文件
+4、恢复代码至缺省模板
+5、

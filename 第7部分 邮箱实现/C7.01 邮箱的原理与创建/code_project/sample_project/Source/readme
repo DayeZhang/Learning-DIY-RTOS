@@ -1,0 +1,15 @@
+目的：
+
+1、创建tMbox.h和tMBox.c文件；
+2、在头文件中添加_tMBox定义和_tMBoxInfo， 此处遵循信号量的模式
+3、在.c中添加tMboxInit
+
+3.1 添加tEventTypeMBox宏定义到tEvent.h中
+3.2 参数不检查，自行检查
+3.3 需要自己传缓冲区，因为没有内存分配功能（灵活分配内存）
+
+4、在tinyOs.h中添加#include "tMBox.h"
+
+
+4、app.c删除所有信号量相关代码
+
