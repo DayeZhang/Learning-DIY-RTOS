@@ -1,0 +1,1280 @@
+Component: ARM Compiler 5.06 update 3 (build 300) Tool: armlink [4d35c9]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.checkCpuUsage) refers to main.o(i.tTaskSchedEnable) for tTaskSchedEnable
+    main.o(i.checkCpuUsage) refers to dflt_clz.o(x$fpl$dfltu) for __aeabi_ui2d
+    main.o(i.checkCpuUsage) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    main.o(i.checkCpuUsage) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    main.o(i.checkCpuUsage) refers to daddsub_clz.o(x$fpl$drsb) for __aeabi_drsub
+    main.o(i.checkCpuUsage) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
+    main.o(i.checkCpuUsage) refers to main.o(.data) for enableCpuUsageState
+    main.o(i.cpuUsageSyncWithSysTick) refers to main.o(.data) for enableCpuUsageState
+    main.o(i.idleTaskEntry) refers to main.o(i.tTaskSchedDisable) for tTaskSchedDisable
+    main.o(i.idleTaskEntry) refers to app.o(i.tInitApp) for tInitApp
+    main.o(i.idleTaskEntry) refers to ttimer.o(i.tTimerInitTask) for tTimerInitTask
+    main.o(i.idleTaskEntry) refers to tcpu.o(i.tSetSysTickPeriod) for tSetSysTickPeriod
+    main.o(i.idleTaskEntry) refers to main.o(i.cpuUsageSyncWithSysTick) for cpuUsageSyncWithSysTick
+    main.o(i.idleTaskEntry) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.idleTaskEntry) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.idleTaskEntry) refers to thooks.o(i.tHooksCpuIdle) for tHooksCpuIdle
+    main.o(i.idleTaskEntry) refers to main.o(.data) for idleCount
+    main.o(i.initCpuUsageStat) refers to main.o(.data) for idleCount
+    main.o(i.main) refers to main.o(i.tTaskSchedInit) for tTaskSchedInit
+    main.o(i.main) refers to main.o(i.tTaskDelayedInit) for tTaskDelayedInit
+    main.o(i.main) refers to ttimer.o(i.tTimerModuleInit) for tTimerModuleInit
+    main.o(i.main) refers to main.o(i.tTimeTickInit) for tTimeTickInit
+    main.o(i.main) refers to main.o(i.initCpuUsageStat) for initCpuUsageStat
+    main.o(i.main) refers to ttask.o(i.tTaskInit) for tTaskInit
+    main.o(i.main) refers to main.o(i.tTaskHighestReady) for tTaskHighestReady
+    main.o(i.main) refers to switch.o(i.tTaskRunFirst) for tTaskRunFirst
+    main.o(i.main) refers to main.o(.bss) for idleTaskEnv
+    main.o(i.main) refers to main.o(i.idleTaskEntry) for idleTaskEntry
+    main.o(i.main) refers to main.o(.data) for idleTask
+    main.o(i.tCpuUsageGet) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.tCpuUsageGet) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.tCpuUsageGet) refers to main.o(.data) for cpuUsage
+    main.o(i.tTaskDelayedInit) refers to tlist.o(i.tListInit) for tListInit
+    main.o(i.tTaskDelayedInit) refers to main.o(.bss) for tTaskDelayedList
+    main.o(i.tTaskHighestReady) refers to tbitmap.o(i.tBitmapGetFirstSet) for tBitmapGetFirstSet
+    main.o(i.tTaskHighestReady) refers to tlist.o(i.tListFirst) for tListFirst
+    main.o(i.tTaskHighestReady) refers to main.o(.data) for taskPrioBitmap
+    main.o(i.tTaskHighestReady) refers to main.o(.bss) for taskTable
+    main.o(i.tTaskSched) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.tTaskSched) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.tTaskSched) refers to main.o(i.tTaskHighestReady) for tTaskHighestReady
+    main.o(i.tTaskSched) refers to thooks.o(i.tHooksTaskSwitch) for tHooksTaskSwitch
+    main.o(i.tTaskSched) refers to switch.o(i.tTaskSwitch) for tTaskSwitch
+    main.o(i.tTaskSched) refers to main.o(.data) for schedLockCount
+    main.o(i.tTaskSchedDisable) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.tTaskSchedDisable) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.tTaskSchedDisable) refers to main.o(.data) for schedLockCount
+    main.o(i.tTaskSchedEnable) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.tTaskSchedEnable) refers to main.o(i.tTaskSched) for tTaskSched
+    main.o(i.tTaskSchedEnable) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.tTaskSchedEnable) refers to main.o(.data) for schedLockCount
+    main.o(i.tTaskSchedInit) refers to tbitmap.o(i.tBitmapInit) for tBitmapInit
+    main.o(i.tTaskSchedInit) refers to tlist.o(i.tListInit) for tListInit
+    main.o(i.tTaskSchedInit) refers to main.o(.data) for schedLockCount
+    main.o(i.tTaskSchedInit) refers to main.o(.bss) for taskTable
+    main.o(i.tTaskSchedRdy) refers to tlist.o(i.tListAddFirst) for tListAddFirst
+    main.o(i.tTaskSchedRdy) refers to tbitmap.o(i.tBitmapSet) for tBitmapSet
+    main.o(i.tTaskSchedRdy) refers to main.o(.bss) for taskTable
+    main.o(i.tTaskSchedRdy) refers to main.o(.data) for taskPrioBitmap
+    main.o(i.tTaskSchedRemove) refers to tlist.o(i.tListRemove) for tListRemove
+    main.o(i.tTaskSchedRemove) refers to tlist.o(i.tListCount) for tListCount
+    main.o(i.tTaskSchedRemove) refers to tbitmap.o(i.tBitmapClear) for tBitmapClear
+    main.o(i.tTaskSchedRemove) refers to main.o(.bss) for taskTable
+    main.o(i.tTaskSchedRemove) refers to main.o(.data) for taskPrioBitmap
+    main.o(i.tTaskSchedUnRdy) refers to tlist.o(i.tListRemove) for tListRemove
+    main.o(i.tTaskSchedUnRdy) refers to tlist.o(i.tListCount) for tListCount
+    main.o(i.tTaskSchedUnRdy) refers to tbitmap.o(i.tBitmapClear) for tBitmapClear
+    main.o(i.tTaskSchedUnRdy) refers to main.o(.bss) for taskTable
+    main.o(i.tTaskSchedUnRdy) refers to main.o(.data) for taskPrioBitmap
+    main.o(i.tTaskSystemTickHandler) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    main.o(i.tTaskSystemTickHandler) refers to tevent.o(i.tEventRemoveTask) for tEventRemoveTask
+    main.o(i.tTaskSystemTickHandler) refers to main.o(i.tTimeTaskWakeUp) for tTimeTaskWakeUp
+    main.o(i.tTaskSystemTickHandler) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    main.o(i.tTaskSystemTickHandler) refers to tlist.o(i.tListCount) for tListCount
+    main.o(i.tTaskSystemTickHandler) refers to tlist.o(i.tListRemoveFirst) for tListRemoveFirst
+    main.o(i.tTaskSystemTickHandler) refers to tlist.o(i.tListAddLast) for tListAddLast
+    main.o(i.tTaskSystemTickHandler) refers to main.o(i.checkCpuUsage) for checkCpuUsage
+    main.o(i.tTaskSystemTickHandler) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    main.o(i.tTaskSystemTickHandler) refers to ttimer.o(i.tTimerModuleTickNotify) for tTimerModuleTickNotify
+    main.o(i.tTaskSystemTickHandler) refers to thooks.o(i.tHooksSysTick) for tHooksSysTick
+    main.o(i.tTaskSystemTickHandler) refers to main.o(i.tTaskSched) for tTaskSched
+    main.o(i.tTaskSystemTickHandler) refers to main.o(.bss) for tTaskDelayedList
+    main.o(i.tTaskSystemTickHandler) refers to main.o(.data) for currentTask
+    main.o(i.tTimeTaskRemove) refers to tlist.o(i.tListRemove) for tListRemove
+    main.o(i.tTimeTaskRemove) refers to main.o(.bss) for tTaskDelayedList
+    main.o(i.tTimeTaskWait) refers to tlist.o(i.tListAddLast) for tListAddLast
+    main.o(i.tTimeTaskWait) refers to main.o(.bss) for tTaskDelayedList
+    main.o(i.tTimeTaskWakeUp) refers to tlist.o(i.tListRemove) for tListRemove
+    main.o(i.tTimeTaskWakeUp) refers to main.o(.bss) for tTaskDelayedList
+    main.o(i.tTimeTickInit) refers to main.o(.data) for tickCount
+    switch.o(.emb_text) refers to main.o(.data) for currentTask
+    tbitmap.o(i.tBitmapGetFirstSet) refers to tbitmap.o(i.tBitmapPosCount) for tBitmapPosCount
+    tbitmap.o(i.tBitmapGetFirstSet) refers to tbitmap.o(.constdata) for quickFindTable
+    ttask.o(i.tTaskDeleteSelf) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskDeleteSelf) refers to main.o(i.tTaskSchedRemove) for tTaskSchedRemove
+    ttask.o(i.tTaskDeleteSelf) refers to main.o(i.tTaskSched) for tTaskSched
+    ttask.o(i.tTaskDeleteSelf) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskDeleteSelf) refers to main.o(.data) for currentTask
+    ttask.o(i.tTaskForceDelete) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskForceDelete) refers to main.o(i.tTimeTaskRemove) for tTimeTaskRemove
+    ttask.o(i.tTaskForceDelete) refers to main.o(i.tTaskSchedRemove) for tTaskSchedRemove
+    ttask.o(i.tTaskForceDelete) refers to main.o(i.tTaskSched) for tTaskSched
+    ttask.o(i.tTaskForceDelete) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskForceDelete) refers to main.o(.data) for currentTask
+    ttask.o(i.tTaskGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskInit) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    ttask.o(i.tTaskInit) refers to tlist.o(i.tNodeInit) for tNodeInit
+    ttask.o(i.tTaskInit) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    ttask.o(i.tTaskInit) refers to thooks.o(i.tHooksTaskInit) for tHooksTaskInit
+    ttask.o(i.tTaskIsRequestedDeleted) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskIsRequestedDeleted) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskIsRequestedDeleted) refers to main.o(.data) for currentTask
+    ttask.o(i.tTaskRequestDelete) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskRequestDelete) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskSuspend) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskSuspend) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    ttask.o(i.tTaskSuspend) refers to main.o(i.tTaskSched) for tTaskSched
+    ttask.o(i.tTaskSuspend) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttask.o(i.tTaskSuspend) refers to main.o(.data) for currentTask
+    ttask.o(i.tTaskWakeUp) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttask.o(i.tTaskWakeUp) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    ttask.o(i.tTaskWakeUp) refers to main.o(i.tTaskSched) for tTaskSched
+    ttask.o(i.tTaskWakeUp) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttime.o(i.tTaskDelay) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttime.o(i.tTaskDelay) refers to main.o(i.tTimeTaskWait) for tTimeTaskWait
+    ttime.o(i.tTaskDelay) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    ttime.o(i.tTaskDelay) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttime.o(i.tTaskDelay) refers to main.o(i.tTaskSched) for tTaskSched
+    ttime.o(i.tTaskDelay) refers to main.o(.data) for currentTask
+    tcpu.o(i.SysTick_Handler) refers to main.o(i.tTaskSystemTickHandler) for tTaskSystemTickHandler
+    tcpu.o(i.tSetSysTickPeriod) refers to system_armcm3.o(.data) for SystemCoreClock
+    app.o(i.tInitApp) refers to ttask.o(i.tTaskInit) for tTaskInit
+    app.o(i.tInitApp) refers to app.o(.bss) for task1Env
+    app.o(i.tInitApp) refers to app.o(i.task1Entry) for task1Entry
+    app.o(i.tInitApp) refers to app.o(i.task2Entry) for task2Entry
+    app.o(i.tInitApp) refers to app.o(i.task3Entry) for task3Entry
+    app.o(i.tInitApp) refers to app.o(i.task4Entry) for task4Entry
+    app.o(i.task1Entry) refers to ttime.o(i.tTaskDelay) for tTaskDelay
+    app.o(i.task1Entry) refers to app.o(.data) for task1Flag
+    app.o(i.task2Entry) refers to ttime.o(i.tTaskDelay) for tTaskDelay
+    app.o(i.task2Entry) refers to app.o(.data) for task2Flag
+    app.o(i.task3Entry) refers to ttime.o(i.tTaskDelay) for tTaskDelay
+    app.o(i.task3Entry) refers to app.o(.data) for task3Flag
+    app.o(i.task4Entry) refers to ttime.o(i.tTaskDelay) for tTaskDelay
+    app.o(i.task4Entry) refers to app.o(.data) for task4Flag
+    tevent.o(i.tEventInit) refers to tlist.o(i.tListInit) for tListInit
+    tevent.o(i.tEventRemoveAll) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventRemoveAll) refers to tlist.o(i.tListCount) for tListCount
+    tevent.o(i.tEventRemoveAll) refers to main.o(i.tTimeTaskWakeUp) for tTimeTaskWakeUp
+    tevent.o(i.tEventRemoveAll) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tevent.o(i.tEventRemoveAll) refers to tlist.o(i.tListRemoveFirst) for tListRemoveFirst
+    tevent.o(i.tEventRemoveAll) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tevent.o(i.tEventRemoveTask) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventRemoveTask) refers to tlist.o(i.tListRemove) for tListRemove
+    tevent.o(i.tEventRemoveTask) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tevent.o(i.tEventWait) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventWait) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    tevent.o(i.tEventWait) refers to tlist.o(i.tListAddLast) for tListAddLast
+    tevent.o(i.tEventWait) refers to main.o(i.tTimeTaskWait) for tTimeTaskWait
+    tevent.o(i.tEventWait) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tevent.o(i.tEventWaitCount) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventWaitCount) refers to tlist.o(i.tListCount) for tListCount
+    tevent.o(i.tEventWaitCount) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tevent.o(i.tEventWakeUp) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventWakeUp) refers to tlist.o(i.tListRemoveFirst) for tListRemoveFirst
+    tevent.o(i.tEventWakeUp) refers to main.o(i.tTimeTaskWakeUp) for tTimeTaskWakeUp
+    tevent.o(i.tEventWakeUp) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tevent.o(i.tEventWakeUp) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tevent.o(i.tEventWakeUpTask) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tevent.o(i.tEventWakeUpTask) refers to tlist.o(i.tListRemove) for tListRemove
+    tevent.o(i.tEventWakeUpTask) refers to main.o(i.tTimeTaskWakeUp) for tTimeTaskWakeUp
+    tevent.o(i.tEventWakeUpTask) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tevent.o(i.tEventWakeUpTask) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemDestroy) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tsem.o(i.tSemDestroy) refers to tevent.o(i.tEventRemoveAll) for tEventRemoveAll
+    tsem.o(i.tSemDestroy) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemDestroy) refers to main.o(i.tTaskSched) for tTaskSched
+    tsem.o(i.tSemGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tsem.o(i.tSemGetInfo) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tsem.o(i.tSemGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemInit) refers to tevent.o(i.tEventInit) for tEventInit
+    tsem.o(i.tSemNoWaitGet) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tsem.o(i.tSemNoWaitGet) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemNotify) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tsem.o(i.tSemNotify) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tsem.o(i.tSemNotify) refers to tevent.o(i.tEventWakeUp) for tEventWakeUp
+    tsem.o(i.tSemNotify) refers to main.o(i.tTaskSched) for tTaskSched
+    tsem.o(i.tSemNotify) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemNotify) refers to main.o(.data) for currentTask
+    tsem.o(i.tSemWait) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tsem.o(i.tSemWait) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tsem.o(i.tSemWait) refers to tevent.o(i.tEventWait) for tEventWait
+    tsem.o(i.tSemWait) refers to main.o(i.tTaskSched) for tTaskSched
+    tsem.o(i.tSemWait) refers to main.o(.data) for currentTask
+    tmbox.o(i.tMboxDestroy) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxDestroy) refers to tevent.o(i.tEventRemoveAll) for tEventRemoveAll
+    tmbox.o(i.tMboxDestroy) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxDestroy) refers to main.o(i.tTaskSched) for tTaskSched
+    tmbox.o(i.tMboxFlush) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxFlush) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmbox.o(i.tMboxFlush) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxGetInfo) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmbox.o(i.tMboxGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxInit) refers to tevent.o(i.tEventInit) for tEventInit
+    tmbox.o(i.tMboxNoWaitGet) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxNoWaitGet) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxNotify) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxNotify) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmbox.o(i.tMboxNotify) refers to tevent.o(i.tEventWakeUp) for tEventWakeUp
+    tmbox.o(i.tMboxNotify) refers to main.o(i.tTaskSched) for tTaskSched
+    tmbox.o(i.tMboxNotify) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxNotify) refers to main.o(.data) for currentTask
+    tmbox.o(i.tMboxWait) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmbox.o(i.tMboxWait) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmbox.o(i.tMboxWait) refers to tevent.o(i.tEventWait) for tEventWait
+    tmbox.o(i.tMboxWait) refers to main.o(i.tTaskSched) for tTaskSched
+    tmbox.o(i.tMboxWait) refers to main.o(.data) for currentTask
+    tmemblock.o(i.tMemBlockDestroy) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmemblock.o(i.tMemBlockDestroy) refers to tevent.o(i.tEventRemoveAll) for tEventRemoveAll
+    tmemblock.o(i.tMemBlockDestroy) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmemblock.o(i.tMemBlockDestroy) refers to main.o(i.tTaskSched) for tTaskSched
+    tmemblock.o(i.tMemBlockGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmemblock.o(i.tMemBlockGetInfo) refers to tlist.o(i.tListCount) for tListCount
+    tmemblock.o(i.tMemBlockGetInfo) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmemblock.o(i.tMemBlockGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmemblock.o(i.tMemBlockInit) refers to tevent.o(i.tEventInit) for tEventInit
+    tmemblock.o(i.tMemBlockInit) refers to tlist.o(i.tListInit) for tListInit
+    tmemblock.o(i.tMemBlockInit) refers to tlist.o(i.tNodeInit) for tNodeInit
+    tmemblock.o(i.tMemBlockInit) refers to tlist.o(i.tListAddLast) for tListAddLast
+    tmemblock.o(i.tMemBlockNoWaitGet) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmemblock.o(i.tMemBlockNoWaitGet) refers to tlist.o(i.tListCount) for tListCount
+    tmemblock.o(i.tMemBlockNoWaitGet) refers to tlist.o(i.tListRemoveFirst) for tListRemoveFirst
+    tmemblock.o(i.tMemBlockNoWaitGet) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmemblock.o(i.tMemBlockNotify) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmemblock.o(i.tMemBlockNotify) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmemblock.o(i.tMemBlockNotify) refers to tevent.o(i.tEventWakeUp) for tEventWakeUp
+    tmemblock.o(i.tMemBlockNotify) refers to main.o(i.tTaskSched) for tTaskSched
+    tmemblock.o(i.tMemBlockNotify) refers to tlist.o(i.tListAddLast) for tListAddLast
+    tmemblock.o(i.tMemBlockNotify) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmemblock.o(i.tMemBlockNotify) refers to main.o(.data) for currentTask
+    tmemblock.o(i.tMemBlockWait) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmemblock.o(i.tMemBlockWait) refers to tlist.o(i.tListCount) for tListCount
+    tmemblock.o(i.tMemBlockWait) refers to tlist.o(i.tListRemoveFirst) for tListRemoveFirst
+    tmemblock.o(i.tMemBlockWait) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmemblock.o(i.tMemBlockWait) refers to tevent.o(i.tEventWait) for tEventWait
+    tmemblock.o(i.tMemBlockWait) refers to main.o(i.tTaskSched) for tTaskSched
+    tmemblock.o(i.tMemBlockWait) refers to main.o(.data) for currentTask
+    tmutex.o(i.tMutexDestroy) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmutex.o(i.tMutexDestroy) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    tmutex.o(i.tMutexDestroy) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tmutex.o(i.tMutexDestroy) refers to tevent.o(i.tEventRemoveAll) for tEventRemoveAll
+    tmutex.o(i.tMutexDestroy) refers to main.o(i.tTaskSched) for tTaskSched
+    tmutex.o(i.tMutexDestroy) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmutex.o(i.tMutexGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmutex.o(i.tMutexGetInfo) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmutex.o(i.tMutexGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmutex.o(i.tMutexInit) refers to tevent.o(i.tEventInit) for tEventInit
+    tmutex.o(i.tMutexNoWaitGet) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmutex.o(i.tMutexNoWaitGet) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmutex.o(i.tMutexNoWaitGet) refers to main.o(.data) for currentTask
+    tmutex.o(i.tMutexNotify) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmutex.o(i.tMutexNotify) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmutex.o(i.tMutexNotify) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    tmutex.o(i.tMutexNotify) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tmutex.o(i.tMutexNotify) refers to tevent.o(i.tEventWaitCount) for tEventWaitCount
+    tmutex.o(i.tMutexNotify) refers to tevent.o(i.tEventWakeUp) for tEventWakeUp
+    tmutex.o(i.tMutexNotify) refers to main.o(i.tTaskSched) for tTaskSched
+    tmutex.o(i.tMutexNotify) refers to main.o(.data) for currentTask
+    tmutex.o(i.tMutexWait) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    tmutex.o(i.tMutexWait) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    tmutex.o(i.tMutexWait) refers to main.o(i.tTaskSchedUnRdy) for tTaskSchedUnRdy
+    tmutex.o(i.tMutexWait) refers to main.o(i.tTaskSchedRdy) for tTaskSchedRdy
+    tmutex.o(i.tMutexWait) refers to tevent.o(i.tEventWait) for tEventWait
+    tmutex.o(i.tMutexWait) refers to main.o(i.tTaskSched) for tTaskSched
+    tmutex.o(i.tMutexWait) refers to main.o(.data) for currentTask
+    ttimer.o(i.tTimerCallFuncList) refers to tlist.o(i.tListRemove) for tListRemove
+    ttimer.o(i.tTimerDestroy) refers to ttimer.o(i.tTimerStop) for tTimerStop
+    ttimer.o(i.tTimerGetInfo) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttimer.o(i.tTimerGetInfo) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttimer.o(i.tTimerInit) refers to tlist.o(i.tNodeInit) for tNodeInit
+    ttimer.o(i.tTimerInitTask) refers to ttask.o(i.tTaskInit) for tTaskInit
+    ttimer.o(i.tTimerInitTask) refers to ttimer.o(.bss) for tTimerTaskStack
+    ttimer.o(i.tTimerInitTask) refers to ttimer.o(i.tTimerSoftTask) for tTimerSoftTask
+    ttimer.o(i.tTimerModuleInit) refers to tlist.o(i.tListInit) for tListInit
+    ttimer.o(i.tTimerModuleInit) refers to tsem.o(i.tSemInit) for tSemInit
+    ttimer.o(i.tTimerModuleInit) refers to ttimer.o(.bss) for tTimerHardList
+    ttimer.o(i.tTimerModuleTickNotify) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttimer.o(i.tTimerModuleTickNotify) refers to ttimer.o(i.tTimerCallFuncList) for tTimerCallFuncList
+    ttimer.o(i.tTimerModuleTickNotify) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttimer.o(i.tTimerModuleTickNotify) refers to tsem.o(i.tSemNotify) for tSemNotify
+    ttimer.o(i.tTimerModuleTickNotify) refers to ttimer.o(.bss) for tTimerHardList
+    ttimer.o(i.tTimerSoftTask) refers to tsem.o(i.tSemWait) for tSemWait
+    ttimer.o(i.tTimerSoftTask) refers to ttimer.o(i.tTimerCallFuncList) for tTimerCallFuncList
+    ttimer.o(i.tTimerSoftTask) refers to tsem.o(i.tSemNotify) for tSemNotify
+    ttimer.o(i.tTimerSoftTask) refers to ttimer.o(.bss) for tTimerTickSem
+    ttimer.o(i.tTimerStart) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttimer.o(i.tTimerStart) refers to tlist.o(i.tListAddFirst) for tListAddFirst
+    ttimer.o(i.tTimerStart) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttimer.o(i.tTimerStart) refers to tsem.o(i.tSemWait) for tSemWait
+    ttimer.o(i.tTimerStart) refers to tlist.o(i.tListAddLast) for tListAddLast
+    ttimer.o(i.tTimerStart) refers to tsem.o(i.tSemNotify) for tSemNotify
+    ttimer.o(i.tTimerStart) refers to ttimer.o(.bss) for tTimerHardList
+    ttimer.o(i.tTimerStop) refers to switch.o(i.tTaskEnterCritical) for tTaskEnterCritical
+    ttimer.o(i.tTimerStop) refers to tlist.o(i.tListRemove) for tListRemove
+    ttimer.o(i.tTimerStop) refers to switch.o(i.tTaskExitCritical) for tTaskExitCritical
+    ttimer.o(i.tTimerStop) refers to tsem.o(i.tSemWait) for tSemWait
+    ttimer.o(i.tTimerStop) refers to tsem.o(i.tSemNotify) for tSemNotify
+    ttimer.o(i.tTimerStop) refers to ttimer.o(.bss) for tTimerHardList
+    startup_armcm3.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm3.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm3.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm3.o(RESET) refers to startup_armcm3.o(STACK) for __initial_sp
+    startup_armcm3.o(RESET) refers to startup_armcm3.o(.text) for Reset_Handler
+    startup_armcm3.o(RESET) refers to switch.o(.emb_text) for PendSV_Handler
+    startup_armcm3.o(RESET) refers to tcpu.o(i.SysTick_Handler) for SysTick_Handler
+    startup_armcm3.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_armcm3.o(.text) refers to system_armcm3.o(i.SystemInit) for SystemInit
+    startup_armcm3.o(.text) refers to __main.o(!!!main) for __main
+    startup_armcm3.o(.text) refers to startup_armcm3.o(HEAP) for Heap_Mem
+    startup_armcm3.o(.text) refers to startup_armcm3.o(STACK) for Stack_Mem
+    system_armcm3.o(i.SystemCoreClockUpdate) refers to system_armcm3.o(.data) for SystemCoreClock
+    system_armcm3.o(i.SystemInit) refers to system_armcm3.o(.data) for SystemCoreClock
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    d2f.o(x$fpl$d2f) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    d2f.o(x$fpl$d2f) refers to fretinf.o(x$fpl$fretinf) for __fpl_fretinf
+    d2f.o(x$fpl$d2f) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    daddsub_clz.o(x$fpl$dadd) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dadd) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dadd) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    daddsub_clz.o(x$fpl$dadd) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    daddsub_clz.o(x$fpl$drsb) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$drsb) refers to daddsub_clz.o(x$fpl$dsub) for _dsub1
+    daddsub_clz.o(x$fpl$dsub) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    daddsub_clz.o(x$fpl$dsub) refers to daddsub_clz.o(x$fpl$dadd) for _dadd1
+    daddsub_clz.o(x$fpl$dsub) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    ddiv.o(x$fpl$drdiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$drdiv) refers to ddiv.o(x$fpl$ddiv) for ddiv_entry
+    ddiv.o(x$fpl$ddiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$ddiv) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    ddiv.o(x$fpl$ddiv) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dflt_clz.o(x$fpl$dfltu) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dflt) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dflt_clz.o(x$fpl$dfltn) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    dmul.o(x$fpl$dmul) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    dnaninf.o(x$fpl$dnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fretinf.o(x$fpl$fretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_armcm3.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(i.tCpuUsageGet), (28 bytes).
+    Removing main.o(i.tTaskSchedRemove), (60 bytes).
+    Removing main.o(i.tTimeTaskRemove), (20 bytes).
+    Removing switch.o(.rev16_text), (4 bytes).
+    Removing switch.o(.revsh_text), (4 bytes).
+    Removing switch.o(.rrx_text), (6 bytes).
+    Removing tlist.o(i.tListInsertAfter), (20 bytes).
+    Removing tlist.o(i.tListLast), (12 bytes).
+    Removing tlist.o(i.tListNext), (16 bytes).
+    Removing tlist.o(i.tListPre), (16 bytes).
+    Removing tlist.o(i.tListRemoveAll), (32 bytes).
+    Removing ttask.o(i.tTaskDeleteSelf), (56 bytes).
+    Removing ttask.o(i.tTaskForceDelete), (80 bytes).
+    Removing ttask.o(i.tTaskGetInfo), (86 bytes).
+    Removing ttask.o(i.tTaskIsRequestedDeleted), (32 bytes).
+    Removing ttask.o(i.tTaskRequestDelete), (24 bytes).
+    Removing ttask.o(i.tTaskSetCleanCallFunc), (6 bytes).
+    Removing ttask.o(i.tTaskSuspend), (68 bytes).
+    Removing ttask.o(i.tTaskWakeUp), (54 bytes).
+    Removing tcpu.o(.rev16_text), (4 bytes).
+    Removing tcpu.o(.revsh_text), (4 bytes).
+    Removing tcpu.o(.rrx_text), (6 bytes).
+    Removing tevent.o(i.tEventRemoveAll), (92 bytes).
+    Removing tevent.o(i.tEventWakeUpTask), (72 bytes).
+    Removing tsem.o(i.tSemDestroy), (42 bytes).
+    Removing tsem.o(i.tSemGetInfo), (36 bytes).
+    Removing tsem.o(i.tSemNoWaitGet), (40 bytes).
+    Removing tmbox.o(i.tMboxDestroy), (38 bytes).
+    Removing tmbox.o(i.tMboxFlush), (34 bytes).
+    Removing tmbox.o(i.tMboxGetInfo), (36 bytes).
+    Removing tmbox.o(i.tMboxInit), (30 bytes).
+    Removing tmbox.o(i.tMboxNoWaitGet), (68 bytes).
+    Removing tmbox.o(i.tMboxNotify), (152 bytes).
+    Removing tmbox.o(i.tMboxWait), (108 bytes).
+    Removing tmemblock.o(i.tMemBlockDestroy), (38 bytes).
+    Removing tmemblock.o(i.tMemBlockGetInfo), (46 bytes).
+    Removing tmemblock.o(i.tMemBlockInit), (78 bytes).
+    Removing tmemblock.o(i.tMemBlockNoWaitGet), (52 bytes).
+    Removing tmemblock.o(i.tMemBlockNotify), (76 bytes).
+    Removing tmemblock.o(i.tMemBlockWait), (92 bytes).
+    Removing tmutex.o(i.tMutexDestroy), (86 bytes).
+    Removing tmutex.o(i.tMutexGetInfo), (56 bytes).
+    Removing tmutex.o(i.tMutexInit), (24 bytes).
+    Removing tmutex.o(i.tMutexNoWaitGet), (84 bytes).
+    Removing tmutex.o(i.tMutexNotify), (172 bytes).
+    Removing tmutex.o(i.tMutexWait), (164 bytes).
+    Removing ttimer.o(i.tTimerDestroy), (18 bytes).
+    Removing ttimer.o(i.tTimerGetInfo), (46 bytes).
+    Removing ttimer.o(i.tTimerInit), (56 bytes).
+    Removing ttimer.o(i.tTimerStart), (108 bytes).
+    Removing ttimer.o(i.tTimerStop), (92 bytes).
+    Removing system_armcm3.o(.rev16_text), (4 bytes).
+    Removing system_armcm3.o(.revsh_text), (4 bytes).
+    Removing system_armcm3.o(.rrx_text), (6 bytes).
+    Removing system_armcm3.o(i.SystemCoreClockUpdate), (16 bytes).
+
+58 unused section(s) (total 2718 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_armcm3.o(RESET)
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/d2f.s                           0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/daddsub.s                       0x00000000   Number         0  daddsub_clz.o ABSOLUTE
+    ../fplib/ddiv.s                          0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/dflt.s                          0x00000000   Number         0  dflt_clz.o ABSOLUTE
+    ../fplib/dmul.s                          0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/dnaninf.s                       0x00000000   Number         0  dnaninf.o ABSOLUTE
+    ../fplib/dretinf.s                       0x00000000   Number         0  dretinf.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    ../fplib/fretinf.s                       0x00000000   Number         0  fretinf.o ABSOLUTE
+    ../fplib/usenofp.s                       0x00000000   Number         0  usenofp.o ABSOLUTE
+    RTE\Device\ARMCM3\startup_ARMCM3.s       0x00000000   Number         0  startup_armcm3.o ABSOLUTE
+    RTE\Device\ARMCM3\system_ARMCM3.c        0x00000000   Number         0  system_armcm3.o ABSOLUTE
+    RTE\\Device\\ARMCM3\\system_ARMCM3.c     0x00000000   Number         0  system_armcm3.o ABSOLUTE
+    Source\\main.c                           0x00000000   Number         0  main.o ABSOLUTE
+    Source\\switch.c                         0x00000000   Number         0  switch.o ABSOLUTE
+    Source\\tCpu.c                           0x00000000   Number         0  tcpu.o ABSOLUTE
+    Source\app.c                             0x00000000   Number         0  app.o ABSOLUTE
+    Source\main.c                            0x00000000   Number         0  main.o ABSOLUTE
+    Source\switch.c                          0x00000000   Number         0  switch.o ABSOLUTE
+    Source\tBitmap.c                         0x00000000   Number         0  tbitmap.o ABSOLUTE
+    Source\tCpu.c                            0x00000000   Number         0  tcpu.o ABSOLUTE
+    Source\tEvent.c                          0x00000000   Number         0  tevent.o ABSOLUTE
+    Source\tFlagGroup.c                      0x00000000   Number         0  tflaggroup.o ABSOLUTE
+    Source\tHooks.c                          0x00000000   Number         0  thooks.o ABSOLUTE
+    Source\tList.c                           0x00000000   Number         0  tlist.o ABSOLUTE
+    Source\tMbox.c                           0x00000000   Number         0  tmbox.o ABSOLUTE
+    Source\tMemBlock.c                       0x00000000   Number         0  tmemblock.o ABSOLUTE
+    Source\tMutex.c                          0x00000000   Number         0  tmutex.o ABSOLUTE
+    Source\tSem.c                            0x00000000   Number         0  tsem.o ABSOLUTE
+    Source\tTask.c                           0x00000000   Number         0  ttask.o ABSOLUTE
+    Source\tTime.c                           0x00000000   Number         0  ttime.o ABSOLUTE
+    Source\tTimer.c                          0x00000000   Number         0  ttimer.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    !!!main                                  0x000000c0   Section        8  __main.o(!!!main)
+    !!!scatter                               0x000000c8   Section       52  __scatter.o(!!!scatter)
+    !!handler_copy                           0x000000fc   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x00000118   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x00000134   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x00000136   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x00000136   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$libshutdown$$00000000      0x00000138   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x0000013a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x0000013a   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x0000013c   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x0000013c   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x0000013c   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x00000142   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x00000142   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x00000146   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x00000146   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x0000014e   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x00000150   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x00000150   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x00000154   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .emb_text                                0x0000015c   Section       48  switch.o(.emb_text)
+    .text                                    0x0000018c   Section       64  startup_armcm3.o(.text)
+    .text                                    0x000001cc   Section       78  rt_memclr_w.o(.text)
+    .text                                    0x0000021a   Section        0  heapauxi.o(.text)
+    .text                                    0x00000220   Section       74  sys_stackheap_outer.o(.text)
+    .text                                    0x0000026a   Section        0  exit.o(.text)
+    .text                                    0x0000027c   Section        8  libspace.o(.text)
+    .text                                    0x00000284   Section        0  sys_exit.o(.text)
+    .text                                    0x00000290   Section        2  use_no_semi.o(.text)
+    .text                                    0x00000292   Section        0  indicate_semi.o(.text)
+    i.SysTick_Handler                        0x00000292   Section        0  tcpu.o(i.SysTick_Handler)
+    i.SystemInit                             0x0000029c   Section        0  system_armcm3.o(i.SystemInit)
+    i.checkCpuUsage                          0x000002ac   Section        0  main.o(i.checkCpuUsage)
+    checkCpuUsage                            0x000002ad   Thumb Code   142  main.o(i.checkCpuUsage)
+    i.cpuUsageSyncWithSysTick                0x00000354   Section        0  main.o(i.cpuUsageSyncWithSysTick)
+    cpuUsageSyncWithSysTick                  0x00000355   Thumb Code    12  main.o(i.cpuUsageSyncWithSysTick)
+    i.idleTaskEntry                          0x00000364   Section        0  main.o(i.idleTaskEntry)
+    i.initCpuUsageStat                       0x0000039c   Section        0  main.o(i.initCpuUsageStat)
+    initCpuUsageStat                         0x0000039d   Thumb Code    20  main.o(i.initCpuUsageStat)
+    i.main                                   0x000003c0   Section        0  main.o(i.main)
+    i.tBitmapClear                           0x00000418   Section        0  tbitmap.o(i.tBitmapClear)
+    i.tBitmapGetFirstSet                     0x00000424   Section        0  tbitmap.o(i.tBitmapGetFirstSet)
+    i.tBitmapInit                            0x00000480   Section        0  tbitmap.o(i.tBitmapInit)
+    i.tBitmapPosCount                        0x00000486   Section        0  tbitmap.o(i.tBitmapPosCount)
+    i.tBitmapSet                             0x0000048a   Section        0  tbitmap.o(i.tBitmapSet)
+    i.tEventInit                             0x00000496   Section        0  tevent.o(i.tEventInit)
+    i.tEventRemoveTask                       0x000004a8   Section        0  tevent.o(i.tEventRemoveTask)
+    i.tEventWait                             0x000004de   Section        0  tevent.o(i.tEventWait)
+    i.tEventWaitCount                        0x0000052c   Section        0  tevent.o(i.tEventWaitCount)
+    i.tEventWakeUp                           0x0000054a   Section        0  tevent.o(i.tEventWakeUp)
+    i.tHooksCpuIdle                          0x00000598   Section        0  thooks.o(i.tHooksCpuIdle)
+    i.tHooksSysTick                          0x0000059a   Section        0  thooks.o(i.tHooksSysTick)
+    i.tHooksTaskInit                         0x0000059c   Section        0  thooks.o(i.tHooksTaskInit)
+    i.tHooksTaskSwitch                       0x0000059e   Section        0  thooks.o(i.tHooksTaskSwitch)
+    i.tInitApp                               0x000005a0   Section        0  app.o(i.tInitApp)
+    i.tListAddFirst                          0x00000634   Section        0  tlist.o(i.tListAddFirst)
+    i.tListAddLast                           0x0000064c   Section        0  tlist.o(i.tListAddLast)
+    i.tListCount                             0x00000660   Section        0  tlist.o(i.tListCount)
+    i.tListFirst                             0x00000666   Section        0  tlist.o(i.tListFirst)
+    i.tListInit                              0x00000672   Section        0  tlist.o(i.tListInit)
+    i.tListRemove                            0x0000067c   Section        0  tlist.o(i.tListRemove)
+    i.tListRemoveFirst                       0x00000690   Section        0  tlist.o(i.tListRemoveFirst)
+    i.tNodeInit                              0x000006aa   Section        0  tlist.o(i.tNodeInit)
+    i.tSemInit                               0x000006b0   Section        0  tsem.o(i.tSemInit)
+    i.tSemNotify                             0x000006d8   Section        0  tsem.o(i.tSemNotify)
+    i.tSemWait                               0x0000072c   Section        0  tsem.o(i.tSemWait)
+    i.tSetSysTickPeriod                      0x00000774   Section        0  tcpu.o(i.tSetSysTickPeriod)
+    i.tTaskDelay                             0x000007cc   Section        0  ttime.o(i.tTaskDelay)
+    i.tTaskDelayedInit                       0x000007f8   Section        0  main.o(i.tTaskDelayedInit)
+    i.tTaskEnterCritical                     0x00000808   Section        0  switch.o(i.tTaskEnterCritical)
+    i.tTaskExitCritical                      0x00000814   Section        0  switch.o(i.tTaskExitCritical)
+    i.tTaskHighestReady                      0x00000820   Section        0  main.o(i.tTaskHighestReady)
+    i.tTaskInit                              0x00000848   Section        0  ttask.o(i.tTaskInit)
+    i.tTaskRunFirst                          0x00000928   Section        0  switch.o(i.tTaskRunFirst)
+    i.tTaskSched                             0x00000944   Section        0  main.o(i.tTaskSched)
+    i.tTaskSchedDisable                      0x00000994   Section        0  main.o(i.tTaskSchedDisable)
+    i.tTaskSchedEnable                       0x000009bc   Section        0  main.o(i.tTaskSchedEnable)
+    i.tTaskSchedInit                         0x000009ec   Section        0  main.o(i.tTaskSchedInit)
+    i.tTaskSchedRdy                          0x00000a20   Section        0  main.o(i.tTaskSchedRdy)
+    i.tTaskSchedUnRdy                        0x00000a4c   Section        0  main.o(i.tTaskSchedUnRdy)
+    i.tTaskSwitch                            0x00000a88   Section        0  switch.o(i.tTaskSwitch)
+    i.tTaskSystemTickHandler                 0x00000a98   Section        0  main.o(i.tTaskSystemTickHandler)
+    i.tTimeTaskWait                          0x00000b64   Section        0  main.o(i.tTimeTaskWait)
+    i.tTimeTaskWakeUp                        0x00000b84   Section        0  main.o(i.tTimeTaskWakeUp)
+    i.tTimeTickInit                          0x00000ba0   Section        0  main.o(i.tTimeTickInit)
+    i.tTimerCallFuncList                     0x00000bac   Section        0  ttimer.o(i.tTimerCallFuncList)
+    tTimerCallFuncList                       0x00000bad   Thumb Code    72  ttimer.o(i.tTimerCallFuncList)
+    i.tTimerInitTask                         0x00000bf4   Section        0  ttimer.o(i.tTimerInitTask)
+    i.tTimerModuleInit                       0x00000c1c   Section        0  ttimer.o(i.tTimerModuleInit)
+    i.tTimerModuleTickNotify                 0x00000c50   Section        0  ttimer.o(i.tTimerModuleTickNotify)
+    i.tTimerSoftTask                         0x00000c74   Section        0  ttimer.o(i.tTimerSoftTask)
+    tTimerSoftTask                           0x00000c75   Thumb Code    32  ttimer.o(i.tTimerSoftTask)
+    i.task1Entry                             0x00000ca0   Section        0  app.o(i.task1Entry)
+    i.task2Entry                             0x00000cc0   Section        0  app.o(i.task2Entry)
+    i.task3Entry                             0x00000ce0   Section        0  app.o(i.task3Entry)
+    i.task4Entry                             0x00000d00   Section        0  app.o(i.task4Entry)
+    x$fpl$d2f                                0x00000d20   Section       98  d2f.o(x$fpl$d2f)
+    x$fpl$dadd                               0x00000d84   Section      336  daddsub_clz.o(x$fpl$dadd)
+    _dadd1                                   0x00000d95   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    x$fpl$ddiv                               0x00000ed4   Section      688  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x00000edb   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    x$fpl$dfltu                              0x00001184   Section       38  dflt_clz.o(x$fpl$dfltu)
+    x$fpl$dmul                               0x000011ac   Section      340  dmul.o(x$fpl$dmul)
+    x$fpl$dnaninf                            0x00001300   Section      156  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dretinf                            0x0000139c   Section       12  dretinf.o(x$fpl$dretinf)
+    x$fpl$drsb                               0x000013a8   Section       22  daddsub_clz.o(x$fpl$drsb)
+    x$fpl$dsub                               0x000013c0   Section      468  daddsub_clz.o(x$fpl$dsub)
+    _dsub1                                   0x000013d1   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    x$fpl$fretinf                            0x00001594   Section       10  fretinf.o(x$fpl$fretinf)
+    .constdata                               0x0000159e   Section      256  tbitmap.o(.constdata)
+    x$fpl$usenofp                            0x0000159e   Section        0  usenofp.o(x$fpl$usenofp)
+    quickFindTable                           0x0000159e   Data         256  tbitmap.o(.constdata)
+    .data                                    0x20000000   Section       40  main.o(.data)
+    cpuUsage                                 0x20000020   Data           4  main.o(.data)
+    enableCpuUsageState                      0x20000024   Data           4  main.o(.data)
+    .data                                    0x20000028   Section       16  app.o(.data)
+    .data                                    0x20000038   Section        4  system_armcm3.o(.data)
+    .bss                                     0x2000003c   Section     4572  main.o(.bss)
+    .bss                                     0x20001218   Section    16704  app.o(.bss)
+    .bss                                     0x20005358   Section     4248  ttimer.o(.bss)
+    tTimerHardList                           0x20005358   Data          12  ttimer.o(.bss)
+    tTimerSoftList                           0x20005364   Data          12  ttimer.o(.bss)
+    tTimerProtectSem                         0x20005370   Data          24  ttimer.o(.bss)
+    tTimerTickSem                            0x20005388   Data          24  ttimer.o(.bss)
+    tTimeTask                                0x200053a0   Data          80  ttimer.o(.bss)
+    tTimerTaskStack                          0x200053f0   Data        4096  ttimer.o(.bss)
+    .bss                                     0x200063f0   Section       96  libspace.o(.bss)
+    HEAP                                     0x20006450   Section     3072  startup_armcm3.o(HEAP)
+    Heap_Mem                                 0x20006450   Data        3072  startup_armcm3.o(HEAP)
+    STACK                                    0x20007050   Section     1024  startup_armcm3.o(STACK)
+    Stack_Mem                                0x20007050   Data        1024  startup_armcm3.o(STACK)
+    __initial_sp                             0x20007450   Data           0  startup_armcm3.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_armcm3.o(RESET)
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_armcm3.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_armcm3.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x000000c9   Thumb Code    44  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x000000d7   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x000000fd   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x00000119   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x00000135   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_1                       0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x00000137   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_shutdown                        0x00000139   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x0000013b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x0000013d   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x0000013d   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x0000013d   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x00000143   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x00000143   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x00000147   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x00000147   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x0000014f   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x00000151   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x00000151   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x00000155   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    PendSV_Handler                           0x0000015d   Thumb Code    40  switch.o(.emb_text)
+    Reset_Handler                            0x0000018d   Thumb Code     8  startup_armcm3.o(.text)
+    NMI_Handler                              0x00000195   Thumb Code     2  startup_armcm3.o(.text)
+    HardFault_Handler                        0x00000197   Thumb Code     2  startup_armcm3.o(.text)
+    MemManage_Handler                        0x00000199   Thumb Code     2  startup_armcm3.o(.text)
+    BusFault_Handler                         0x0000019b   Thumb Code     2  startup_armcm3.o(.text)
+    UsageFault_Handler                       0x0000019d   Thumb Code     2  startup_armcm3.o(.text)
+    SVC_Handler                              0x0000019f   Thumb Code     2  startup_armcm3.o(.text)
+    DebugMon_Handler                         0x000001a1   Thumb Code     2  startup_armcm3.o(.text)
+    AACI_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    CAN_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    CHLCD_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    CLCD_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    CPU_CLCD_IRQHandler                      0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    ENET_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    FLEXRAY_IRQHandler                       0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    I2C_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    LIN_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    MCIA_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    MCIB_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    RTC_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    SPI_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    TIM0_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    TIM2_IRQHandler                          0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    UART0_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    UART1_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    UART2_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    UART3_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    UART4_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    USBDC_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    USBHC_IRQHandler                         0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    WDT_IRQHandler                           0x000001a7   Thumb Code     0  startup_armcm3.o(.text)
+    __user_initial_stackheap                 0x000001a9   Thumb Code    10  startup_armcm3.o(.text)
+    __aeabi_memclr4                          0x000001cd   Thumb Code     0  rt_memclr_w.o(.text)
+    __aeabi_memclr8                          0x000001cd   Thumb Code     0  rt_memclr_w.o(.text)
+    __rt_memclr_w                            0x000001cd   Thumb Code    78  rt_memclr_w.o(.text)
+    _memset_w                                0x000001d1   Thumb Code     0  rt_memclr_w.o(.text)
+    __use_two_region_memory                  0x0000021b   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x0000021d   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x0000021f   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x00000221   Thumb Code    74  sys_stackheap_outer.o(.text)
+    exit                                     0x0000026b   Thumb Code    18  exit.o(.text)
+    __user_libspace                          0x0000027d   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x0000027d   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x0000027d   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x00000285   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000291   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000291   Thumb Code     2  use_no_semi.o(.text)
+    SysTick_Handler                          0x00000293   Thumb Code     8  tcpu.o(i.SysTick_Handler)
+    __semihosting_library_function           0x00000293   Thumb Code     0  indicate_semi.o(.text)
+    SystemInit                               0x0000029d   Thumb Code     8  system_armcm3.o(i.SystemInit)
+    idleTaskEntry                            0x00000365   Thumb Code    52  main.o(i.idleTaskEntry)
+    main                                     0x000003c1   Thumb Code    66  main.o(i.main)
+    tBitmapClear                             0x00000419   Thumb Code    12  tbitmap.o(i.tBitmapClear)
+    tBitmapGetFirstSet                       0x00000425   Thumb Code    86  tbitmap.o(i.tBitmapGetFirstSet)
+    tBitmapInit                              0x00000481   Thumb Code     6  tbitmap.o(i.tBitmapInit)
+    tBitmapPosCount                          0x00000487   Thumb Code     4  tbitmap.o(i.tBitmapPosCount)
+    tBitmapSet                               0x0000048b   Thumb Code    12  tbitmap.o(i.tBitmapSet)
+    tEventInit                               0x00000497   Thumb Code    18  tevent.o(i.tEventInit)
+    tEventRemoveTask                         0x000004a9   Thumb Code    54  tevent.o(i.tEventRemoveTask)
+    tEventWait                               0x000004df   Thumb Code    78  tevent.o(i.tEventWait)
+    tEventWaitCount                          0x0000052d   Thumb Code    30  tevent.o(i.tEventWaitCount)
+    tEventWakeUp                             0x0000054b   Thumb Code    78  tevent.o(i.tEventWakeUp)
+    tHooksCpuIdle                            0x00000599   Thumb Code     2  thooks.o(i.tHooksCpuIdle)
+    tHooksSysTick                            0x0000059b   Thumb Code     2  thooks.o(i.tHooksSysTick)
+    tHooksTaskInit                           0x0000059d   Thumb Code     2  thooks.o(i.tHooksTaskInit)
+    tHooksTaskSwitch                         0x0000059f   Thumb Code     2  thooks.o(i.tHooksTaskSwitch)
+    tInitApp                                 0x000005a1   Thumb Code   100  app.o(i.tInitApp)
+    tListAddFirst                            0x00000635   Thumb Code    24  tlist.o(i.tListAddFirst)
+    tListAddLast                             0x0000064d   Thumb Code    20  tlist.o(i.tListAddLast)
+    tListCount                               0x00000661   Thumb Code     6  tlist.o(i.tListCount)
+    tListFirst                               0x00000667   Thumb Code    12  tlist.o(i.tListFirst)
+    tListInit                                0x00000673   Thumb Code    10  tlist.o(i.tListInit)
+    tListRemove                              0x0000067d   Thumb Code    20  tlist.o(i.tListRemove)
+    tListRemoveFirst                         0x00000691   Thumb Code    26  tlist.o(i.tListRemoveFirst)
+    tNodeInit                                0x000006ab   Thumb Code     6  tlist.o(i.tNodeInit)
+    tSemInit                                 0x000006b1   Thumb Code    38  tsem.o(i.tSemInit)
+    tSemNotify                               0x000006d9   Thumb Code    78  tsem.o(i.tSemNotify)
+    tSemWait                                 0x0000072d   Thumb Code    66  tsem.o(i.tSemWait)
+    tSetSysTickPeriod                        0x00000775   Thumb Code    74  tcpu.o(i.tSetSysTickPeriod)
+    tTaskDelay                               0x000007cd   Thumb Code    40  ttime.o(i.tTaskDelay)
+    tTaskDelayedInit                         0x000007f9   Thumb Code    10  main.o(i.tTaskDelayedInit)
+    tTaskEnterCritical                       0x00000809   Thumb Code    12  switch.o(i.tTaskEnterCritical)
+    tTaskExitCritical                        0x00000815   Thumb Code    10  switch.o(i.tTaskExitCritical)
+    tTaskHighestReady                        0x00000821   Thumb Code    32  main.o(i.tTaskHighestReady)
+    tTaskInit                                0x00000849   Thumb Code   222  ttask.o(i.tTaskInit)
+    tTaskRunFirst                            0x00000929   Thumb Code    24  switch.o(i.tTaskRunFirst)
+    tTaskSched                               0x00000945   Thumb Code    66  main.o(i.tTaskSched)
+    tTaskSchedDisable                        0x00000995   Thumb Code    34  main.o(i.tTaskSchedDisable)
+    tTaskSchedEnable                         0x000009bd   Thumb Code    42  main.o(i.tTaskSchedEnable)
+    tTaskSchedInit                           0x000009ed   Thumb Code    40  main.o(i.tTaskSchedInit)
+    tTaskSchedRdy                            0x00000a21   Thumb Code    34  main.o(i.tTaskSchedRdy)
+    tTaskSchedUnRdy                          0x00000a4d   Thumb Code    52  main.o(i.tTaskSchedUnRdy)
+    tTaskSwitch                              0x00000a89   Thumb Code    10  switch.o(i.tTaskSwitch)
+    tTaskSystemTickHandler                   0x00000a99   Thumb Code   186  main.o(i.tTaskSystemTickHandler)
+    tTimeTaskWait                            0x00000b65   Thumb Code    28  main.o(i.tTimeTaskWait)
+    tTimeTaskWakeUp                          0x00000b85   Thumb Code    24  main.o(i.tTimeTaskWakeUp)
+    tTimeTickInit                            0x00000ba1   Thumb Code     8  main.o(i.tTimeTickInit)
+    tTimerInitTask                           0x00000bf5   Thumb Code    26  ttimer.o(i.tTimerInitTask)
+    tTimerModuleInit                         0x00000c1d   Thumb Code    36  ttimer.o(i.tTimerModuleInit)
+    tTimerModuleTickNotify                   0x00000c51   Thumb Code    28  ttimer.o(i.tTimerModuleTickNotify)
+    task1Entry                               0x00000ca1   Thumb Code    26  app.o(i.task1Entry)
+    task2Entry                               0x00000cc1   Thumb Code    26  app.o(i.task2Entry)
+    task3Entry                               0x00000ce1   Thumb Code    26  app.o(i.task3Entry)
+    task4Entry                               0x00000d01   Thumb Code    26  app.o(i.task4Entry)
+    __aeabi_d2f                              0x00000d21   Thumb Code     0  d2f.o(x$fpl$d2f)
+    _d2f                                     0x00000d21   Thumb Code    98  d2f.o(x$fpl$d2f)
+    __aeabi_dadd                             0x00000d85   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    _dadd                                    0x00000d85   Thumb Code   332  daddsub_clz.o(x$fpl$dadd)
+    __aeabi_ddiv                             0x00000ed5   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x00000ed5   Thumb Code   552  ddiv.o(x$fpl$ddiv)
+    __aeabi_ui2d                             0x00001185   Thumb Code     0  dflt_clz.o(x$fpl$dfltu)
+    _dfltu                                   0x00001185   Thumb Code    38  dflt_clz.o(x$fpl$dfltu)
+    __aeabi_dmul                             0x000011ad   Thumb Code     0  dmul.o(x$fpl$dmul)
+    _dmul                                    0x000011ad   Thumb Code   332  dmul.o(x$fpl$dmul)
+    __fpl_dnaninf                            0x00001301   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x0000139d   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    __aeabi_drsub                            0x000013a9   Thumb Code     0  daddsub_clz.o(x$fpl$drsb)
+    _drsb                                    0x000013a9   Thumb Code    22  daddsub_clz.o(x$fpl$drsb)
+    __aeabi_dsub                             0x000013c1   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    _dsub                                    0x000013c1   Thumb Code   464  daddsub_clz.o(x$fpl$dsub)
+    __fpl_fretinf                            0x00001595   Thumb Code    10  fretinf.o(x$fpl$fretinf)
+    __I$use$fp                               0x0000159e   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x000016a0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000016c0   Number         0  anon$$obj.o(Region$$Table)
+    currentTask                              0x20000000   Data           4  main.o(.data)
+    nextTask                                 0x20000004   Data           4  main.o(.data)
+    idleTask                                 0x20000008   Data           4  main.o(.data)
+    taskPrioBitmap                           0x2000000c   Data           4  main.o(.data)
+    schedLockCount                           0x20000010   Data           1  main.o(.data)
+    tickCount                                0x20000014   Data           4  main.o(.data)
+    idleCount                                0x20000018   Data           4  main.o(.data)
+    idleMaxCount                             0x2000001c   Data           4  main.o(.data)
+    task1Flag                                0x20000028   Data           4  app.o(.data)
+    task2Flag                                0x2000002c   Data           4  app.o(.data)
+    task3Flag                                0x20000030   Data           4  app.o(.data)
+    task4Flag                                0x20000034   Data           4  app.o(.data)
+    SystemCoreClock                          0x20000038   Data           4  system_armcm3.o(.data)
+    taskTable                                0x2000003c   Data         384  main.o(.bss)
+    tTaskDelayedList                         0x200001bc   Data          12  main.o(.bss)
+    tTaskIdle                                0x200001c8   Data          80  main.o(.bss)
+    idleTaskEnv                              0x20000218   Data        4096  main.o(.bss)
+    tTask1                                   0x20001218   Data          80  app.o(.bss)
+    tTask2                                   0x20001268   Data          80  app.o(.bss)
+    tTask3                                   0x200012b8   Data          80  app.o(.bss)
+    tTask4                                   0x20001308   Data          80  app.o(.bss)
+    task1Env                                 0x20001358   Data        4096  app.o(.bss)
+    task2Env                                 0x20002358   Data        4096  app.o(.bss)
+    task3Env                                 0x20003358   Data        4096  app.o(.bss)
+    task4Env                                 0x20004358   Data        4096  app.o(.bss)
+    __libspace_start                         0x200063f0   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20006450   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000018d
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x000016fc, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x000016c0, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          848    RESET               startup_armcm3.o
+    0x000000c0   0x00000008   Code   RO          895  * !!!main             c_w.l(__main.o)
+    0x000000c8   0x00000034   Code   RO         1079    !!!scatter          c_w.l(__scatter.o)
+    0x000000fc   0x0000001a   Code   RO         1081    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x00000116   0x00000002   PAD
+    0x00000118   0x0000001c   Code   RO         1083    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x00000134   0x00000002   Code   RO          949    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x00000136   0x00000000   Code   RO          956    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          958    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          961    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          963    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          965    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          968    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          970    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          972    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          974    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          976    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          978    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          980    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          982    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          984    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          986    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          988    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          992    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          994    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          996    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00000136   0x00000000   Code   RO          998    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x00000136   0x00000002   Code   RO          999    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x00000138   0x00000002   Code   RO         1019    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0000013a   0x00000000   Code   RO         1032    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000000   Code   RO         1034    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000000   Code   RO         1037    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000000   Code   RO         1040    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000000   Code   RO         1042    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000000   Code   RO         1045    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0000013a   0x00000002   Code   RO         1046    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0000013c   0x00000000   Code   RO          917    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0000013c   0x00000000   Code   RO          926    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0000013c   0x00000006   Code   RO          938    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x00000142   0x00000000   Code   RO          928    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x00000142   0x00000004   Code   RO          929    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x00000146   0x00000000   Code   RO          931    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x00000146   0x00000008   Code   RO          932    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0000014e   0x00000002   Code   RO          953    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x00000150   0x00000000   Code   RO         1001    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x00000150   0x00000004   Code   RO         1002    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x00000154   0x00000006   Code   RO         1003    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x0000015a   0x00000002   PAD
+    0x0000015c   0x00000030   Code   RO          205    .emb_text           switch.o
+    0x0000018c   0x00000040   Code   RO          849  * .text               startup_armcm3.o
+    0x000001cc   0x0000004e   Code   RO          891    .text               c_w.l(rt_memclr_w.o)
+    0x0000021a   0x00000006   Code   RO          893    .text               c_w.l(heapauxi.o)
+    0x00000220   0x0000004a   Code   RO          940    .text               c_w.l(sys_stackheap_outer.o)
+    0x0000026a   0x00000012   Code   RO          942    .text               c_w.l(exit.o)
+    0x0000027c   0x00000008   Code   RO          950    .text               c_w.l(libspace.o)
+    0x00000284   0x0000000c   Code   RO         1011    .text               c_w.l(sys_exit.o)
+    0x00000290   0x00000002   Code   RO         1022    .text               c_w.l(use_no_semi.o)
+    0x00000292   0x00000000   Code   RO         1024    .text               c_w.l(indicate_semi.o)
+    0x00000292   0x00000008   Code   RO          451    i.SysTick_Handler   tcpu.o
+    0x0000029a   0x00000002   PAD
+    0x0000029c   0x00000010   Code   RO          857    i.SystemInit        system_armcm3.o
+    0x000002ac   0x000000a8   Code   RO            4    i.checkCpuUsage     main.o
+    0x00000354   0x00000010   Code   RO            5    i.cpuUsageSyncWithSysTick  main.o
+    0x00000364   0x00000038   Code   RO            6    i.idleTaskEntry     main.o
+    0x0000039c   0x00000024   Code   RO            7    i.initCpuUsageStat  main.o
+    0x000003c0   0x00000058   Code   RO            8    i.main              main.o
+    0x00000418   0x0000000c   Code   RO          255    i.tBitmapClear      tbitmap.o
+    0x00000424   0x0000005c   Code   RO          256    i.tBitmapGetFirstSet  tbitmap.o
+    0x00000480   0x00000006   Code   RO          257    i.tBitmapInit       tbitmap.o
+    0x00000486   0x00000004   Code   RO          258    i.tBitmapPosCount   tbitmap.o
+    0x0000048a   0x0000000c   Code   RO          259    i.tBitmapSet        tbitmap.o
+    0x00000496   0x00000012   Code   RO          522    i.tEventInit        tevent.o
+    0x000004a8   0x00000036   Code   RO          524    i.tEventRemoveTask  tevent.o
+    0x000004de   0x0000004e   Code   RO          525    i.tEventWait        tevent.o
+    0x0000052c   0x0000001e   Code   RO          526    i.tEventWaitCount   tevent.o
+    0x0000054a   0x0000004e   Code   RO          527    i.tEventWakeUp      tevent.o
+    0x00000598   0x00000002   Code   RO          816    i.tHooksCpuIdle     thooks.o
+    0x0000059a   0x00000002   Code   RO          817    i.tHooksSysTick     thooks.o
+    0x0000059c   0x00000002   Code   RO          818    i.tHooksTaskInit    thooks.o
+    0x0000059e   0x00000002   Code   RO          819    i.tHooksTaskSwitch  thooks.o
+    0x000005a0   0x00000094   Code   RO          482    i.tInitApp          app.o
+    0x00000634   0x00000018   Code   RO          292    i.tListAddFirst     tlist.o
+    0x0000064c   0x00000014   Code   RO          293    i.tListAddLast      tlist.o
+    0x00000660   0x00000006   Code   RO          294    i.tListCount        tlist.o
+    0x00000666   0x0000000c   Code   RO          295    i.tListFirst        tlist.o
+    0x00000672   0x0000000a   Code   RO          296    i.tListInit         tlist.o
+    0x0000067c   0x00000014   Code   RO          301    i.tListRemove       tlist.o
+    0x00000690   0x0000001a   Code   RO          303    i.tListRemoveFirst  tlist.o
+    0x000006aa   0x00000006   Code   RO          304    i.tNodeInit         tlist.o
+    0x000006b0   0x00000026   Code   RO          572    i.tSemInit          tsem.o
+    0x000006d6   0x00000002   PAD
+    0x000006d8   0x00000054   Code   RO          574    i.tSemNotify        tsem.o
+    0x0000072c   0x00000048   Code   RO          575    i.tSemWait          tsem.o
+    0x00000774   0x00000058   Code   RO          452    i.tSetSysTickPeriod  tcpu.o
+    0x000007cc   0x0000002c   Code   RO          436    i.tTaskDelay        ttime.o
+    0x000007f8   0x00000010   Code   RO           10    i.tTaskDelayedInit  main.o
+    0x00000808   0x0000000c   Code   RO          206    i.tTaskEnterCritical  switch.o
+    0x00000814   0x0000000a   Code   RO          207    i.tTaskExitCritical  switch.o
+    0x0000081e   0x00000002   PAD
+    0x00000820   0x00000028   Code   RO           11    i.tTaskHighestReady  main.o
+    0x00000848   0x000000de   Code   RO          379    i.tTaskInit         ttask.o
+    0x00000926   0x00000002   PAD
+    0x00000928   0x0000001c   Code   RO          208    i.tTaskRunFirst     switch.o
+    0x00000944   0x00000050   Code   RO           12    i.tTaskSched        main.o
+    0x00000994   0x00000028   Code   RO           13    i.tTaskSchedDisable  main.o
+    0x000009bc   0x00000030   Code   RO           14    i.tTaskSchedEnable  main.o
+    0x000009ec   0x00000034   Code   RO           15    i.tTaskSchedInit    main.o
+    0x00000a20   0x0000002c   Code   RO           16    i.tTaskSchedRdy     main.o
+    0x00000a4c   0x0000003c   Code   RO           18    i.tTaskSchedUnRdy   main.o
+    0x00000a88   0x00000010   Code   RO          209    i.tTaskSwitch       switch.o
+    0x00000a98   0x000000cc   Code   RO           19    i.tTaskSystemTickHandler  main.o
+    0x00000b64   0x00000020   Code   RO           21    i.tTimeTaskWait     main.o
+    0x00000b84   0x0000001c   Code   RO           22    i.tTimeTaskWakeUp   main.o
+    0x00000ba0   0x0000000c   Code   RO           23    i.tTimeTickInit     main.o
+    0x00000bac   0x00000048   Code   RO          750    i.tTimerCallFuncList  ttimer.o
+    0x00000bf4   0x00000028   Code   RO          754    i.tTimerInitTask    ttimer.o
+    0x00000c1c   0x00000034   Code   RO          755    i.tTimerModuleInit  ttimer.o
+    0x00000c50   0x00000024   Code   RO          756    i.tTimerModuleTickNotify  ttimer.o
+    0x00000c74   0x0000002c   Code   RO          757    i.tTimerSoftTask    ttimer.o
+    0x00000ca0   0x00000020   Code   RO          483    i.task1Entry        app.o
+    0x00000cc0   0x00000020   Code   RO          484    i.task2Entry        app.o
+    0x00000ce0   0x00000020   Code   RO          485    i.task3Entry        app.o
+    0x00000d00   0x00000020   Code   RO          486    i.task4Entry        app.o
+    0x00000d20   0x00000062   Code   RO          897    x$fpl$d2f           fz_ws.l(d2f.o)
+    0x00000d82   0x00000002   PAD
+    0x00000d84   0x00000150   Code   RO          899    x$fpl$dadd          fz_ws.l(daddsub_clz.o)
+    0x00000ed4   0x000002b0   Code   RO          906    x$fpl$ddiv          fz_ws.l(ddiv.o)
+    0x00001184   0x00000026   Code   RO          909    x$fpl$dfltu         fz_ws.l(dflt_clz.o)
+    0x000011aa   0x00000002   PAD
+    0x000011ac   0x00000154   Code   RO          915    x$fpl$dmul          fz_ws.l(dmul.o)
+    0x00001300   0x0000009c   Code   RO          918    x$fpl$dnaninf       fz_ws.l(dnaninf.o)
+    0x0000139c   0x0000000c   Code   RO          920    x$fpl$dretinf       fz_ws.l(dretinf.o)
+    0x000013a8   0x00000016   Code   RO          900    x$fpl$drsb          fz_ws.l(daddsub_clz.o)
+    0x000013be   0x00000002   PAD
+    0x000013c0   0x000001d4   Code   RO          901    x$fpl$dsub          fz_ws.l(daddsub_clz.o)
+    0x00001594   0x0000000a   Code   RO          922    x$fpl$fretinf       fz_ws.l(fretinf.o)
+    0x0000159e   0x00000000   Code   RO          924    x$fpl$usenofp       fz_ws.l(usenofp.o)
+    0x0000159e   0x00000100   Data   RO          260    .constdata          tbitmap.o
+    0x0000169e   0x00000002   PAD
+    0x000016a0   0x00000020   Data   RO         1077    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x0000003c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000028   Data   RW           25    .data               main.o
+    0x20000028   0x00000010   Data   RW          488    .data               app.o
+    0x20000038   0x00000004   Data   RW          858    .data               system_armcm3.o
+
+
+    Execution Region ER_ZI (Base: 0x2000003c, Size: 0x00007414, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000003c   0x000011dc   Zero   RW           24    .bss                main.o
+    0x20001218   0x00004140   Zero   RW          487    .bss                app.o
+    0x20005358   0x00001098   Zero   RW          760    .bss                ttimer.o
+    0x200063f0   0x00000060   Zero   RW          951    .bss                c_w.l(libspace.o)
+    0x20006450   0x00000c00   Zero   RW          847    HEAP                startup_armcm3.o
+    0x20007050   0x00000400   Zero   RW          846    STACK               startup_armcm3.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       276         72          0         16      16704       2813   app.o
+      1020        172          0         40       4572      19248   main.o
+        64         26        192          0       4096        816   startup_armcm3.o
+       114         18          0          0          0       5019   switch.o
+        16          8          0          4          0        615   system_armcm3.o
+       126          6        256          0          0       2513   tbitmap.o
+        96         14          0          0          0      24713   tcpu.o
+       258          0          0          0          0       3218   tevent.o
+         8          0          0          0          0       1808   thooks.o
+       124          0          0          0          0       3798   tlist.o
+       194         12          0          0          0       1971   tsem.o
+       222          0          0          0          0       1044   ttask.o
+        44          4          0          0          0        477   ttime.o
+       244         50          0          0       4248       2741   ttimer.o
+
+    ----------------------------------------------------------------------
+      2814        382        482         60      29620      70794   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         8          0          2          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+        18          0          0          0          0         80   exit.o
+         6          0          0          0          0        152   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+        78          0          0          0          0         80   rt_memclr_w.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+        74          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+        98          4          0          0          0         92   d2f.o
+       826         16          0          0          0        348   daddsub_clz.o
+       688        140          0          0          0        208   ddiv.o
+        38          0          0          0          0         68   dflt_clz.o
+       340         12          0          0          0        104   dmul.o
+       156          4          0          0          0         92   dnaninf.o
+        12          0          0          0          0         68   dretinf.o
+        10          0          0          0          0         68   fretinf.o
+         0          0          0          0          0          0   usenofp.o
+
+    ----------------------------------------------------------------------
+      2528        192          0          0         96       1712   Library Totals
+        10          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       350         16          0          0         96        664   c_w.l
+      2168        176          0          0          0       1048   fz_ws.l
+
+    ----------------------------------------------------------------------
+      2528        192          0          0         96       1712   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5342        574        482         60      29716      68810   Grand Totals
+      5342        574        482         60      29716      68810   ELF Image Totals
+      5342        574        482         60          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 5824 (   5.69kB)
+    Total RW  Size (RW Data + ZI Data)             29776 (  29.08kB)
+    Total ROM Size (Code + RO Data + RW Data)       5884 (   5.75kB)
+
+==============================================================================
+
